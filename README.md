@@ -32,30 +32,30 @@ A backend system for a carpooling application where users can register, log in, 
 
 src/main/java/com/carpool/carpool
 
-── controller
-  ── AuthController.java
-  ── UserController.java
-  ── RideController.java
-  ── BookingController.java
+1. controller
+  - AuthController.java
+  - UserController.java
+  - RideController.java
+  - BookingController.java
 
-── model
-  ── User.java
-  ── Ride.java
-  ── Booking.java
+2. model
+  - User.java
+  - Ride.java
+  - Booking.java
 
-── repository
-  ── UserRepository.java
-  ── RideRepository.java
-  ── BookingRepository.java
+3. repository
+  - UserRepository.java
+  - RideRepository.java
+  - BookingRepository.java
 
-── security
-  ── JwtFilter.java
-  ── JwtUtil.java
-  ── SecurityConfig.java
+4. security
+  - JwtFilter.java
+  - JwtUtil.java
+  - SecurityConfig.java
 
-── service
-  ── RideService.java
-  ── BookingService.java
+5. service
+  - RideService.java
+  - BookingService.java
 
 ---
 
