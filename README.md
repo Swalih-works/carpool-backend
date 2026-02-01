@@ -62,7 +62,8 @@ src/main/java/com/carpool/carpool
    - BookingService.java
 
 6. dto
-   - Request and response DTOs with validation annotations
+   - CreateRideRequest.java
+   - UserRegisterRequest.java
 
 ---
 
