@@ -25,6 +25,10 @@ A backend system for a carpooling application where users can register, log in, 
 - Book and cancel ride bookings
 - Seat availability management
 - Secure REST APIs
+- Request validation using Jakarta Bean Validation
+  - Input validation for user registration
+  - Validation for ride creation and booking requests
+  - Proper validation error handling
 
 ---
 
@@ -33,29 +37,32 @@ A backend system for a carpooling application where users can register, log in, 
 src/main/java/com/carpool/carpool
 
 1. controller
-  - AuthController.java
-  - UserController.java
-  - RideController.java
-  - BookingController.java
+   - AuthController.java
+   - UserController.java
+   - RideController.java
+   - BookingController.java
 
 2. model
-  - User.java
-  - Ride.java
-  - Booking.java
+   - User.java
+   - Ride.java
+   - Booking.java
 
 3. repository
-  - UserRepository.java
-  - RideRepository.java
-  - BookingRepository.java
+   - UserRepository.java
+   - RideRepository.java
+   - BookingRepository.java
 
 4. security
-  - JwtFilter.java
-  - JwtUtil.java
-  - SecurityConfig.java
+   - JwtFilter.java
+   - JwtUtil.java
+   - SecurityConfig.java
 
 5. service
-  - RideService.java
-  - BookingService.java
+   - RideService.java
+   - BookingService.java
+
+6. dto
+   - Request and response DTOs with validation annotations
 
 ---
 
@@ -65,6 +72,7 @@ src/main/java/com/carpool/carpool
 2. Backend validates credentials
 3. JWT token is generated
 4. Token must be sent in headers for protected APIs
+
 
 ---
 
@@ -96,6 +104,6 @@ src/main/java/com/carpool/carpool
 
 ## How to Run Locally
 
-###  Clone Repository
+### Clone Repository
 ```bash
 git clone https://github.com/Swalih-works/carpool-backend.git
